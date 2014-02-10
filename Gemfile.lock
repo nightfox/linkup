@@ -38,6 +38,7 @@ GEM
     angularjs-rails (1.2.10)
     arel (4.0.2)
     atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
     bootstrap-sass (3.1.0.2)
       sass (~> 3.2)
     bootstrap-sass-rails (3.1.0.0)
@@ -56,6 +57,12 @@ GEM
     coffee-script-source (1.7.0)
     connection_pool (1.2.0)
     daemons (1.1.9)
+    devise (3.2.2)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
@@ -81,6 +88,7 @@ GEM
     multi_json (1.8.4)
     optionable (0.2.0)
     origin (2.1.0)
+    orm_adapter (0.5.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -139,6 +147,8 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -148,6 +158,7 @@ DEPENDENCIES
   bootstrap-sass-rails
   bson_ext
   coffee-rails (~> 4.0.0)
+  devise
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
